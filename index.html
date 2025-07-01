@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="contact-box">
+      <h2>Contact Us</h2>
+      <form id="contactForm" onsubmit="return validateForm()">
+
+        <input type="text" id="name" placeholder="Your Name" />
+        <small class="error" id="nameError"></small>
+
+        <input type="text" id="email" placeholder="Your Email" />
+        <small class="error" id="emailError"></small>
+
+        <input type="text" id="mobile" placeholder="Your Mobile Number" />
+        <small class="error" id="mobileError"></small>
+
+        <select id="subject">
+          <option value="">-- Select Subject --</option>
+          <option value="General Inquiry">General Inquiry</option>
+          <option value="Support">Support</option>
+          <option value="Feedback">Feedback</option>
+        </select>
+        <small class="error" id="subjectError"></small>
+
+    
+        <small class="error" id="genderError"></small>
+
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <small class="error" id="messageError"></small>
+
+        <button type="submit">Send</button>
+        <p class="success" id="successMsg"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
